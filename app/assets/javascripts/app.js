@@ -1,6 +1,7 @@
 var app = angular.module('BookApp', [
   'templates',
-  'ui.router'
+  'ui.router',
+  'rails'
 ]);
 
 app.config(function ($stateProvider, $urlRouterProvider) {
