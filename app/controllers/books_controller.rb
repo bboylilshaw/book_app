@@ -1,6 +1,6 @@
 class BooksController < ApplicationController
   def index
     @books = Book.all
-    render json: @books if params[:format] == "json"
+    render json: @books
   end
 end

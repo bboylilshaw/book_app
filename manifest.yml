@@ -1,0 +1,8 @@
+---
+applications:
+- name: book-app-dev
+  memory: 512M
+  instances: 1
+  command: bundle exec rake db:create db:migrate db:seed && bundle exec rails s -p $PORT
+  services:
+    - mysql
